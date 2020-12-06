@@ -8,4 +8,6 @@ Eliminando efeitos colaterais nos resultados.
 
 Implementando método equals()
 
+4 - Privacidade
 
+A variável amount foi convertida para **private** e os tests foram ajustados.
