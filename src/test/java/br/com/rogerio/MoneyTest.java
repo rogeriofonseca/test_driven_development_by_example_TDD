@@ -1,5 +1,6 @@
 package br.com.rogerio;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -16,6 +17,9 @@ public class MoneyTest {
 	@Test
 	public void testEquality() {
 		assertTrue(new Dollar(5).equals(new Dollar(5)));
+		assertFalse(new Dollar(5).equals(new Dollar(612)));
+		assertTrue(new Dollar(5).equals(new Dollar(5)));
+		assertFalse(new Dollar(5).equals(new Dollar(6)));
 	}
 	
 	@Test

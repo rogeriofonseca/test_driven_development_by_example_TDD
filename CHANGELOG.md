@@ -16,3 +16,8 @@ A variável amount foi convertida para **private** e os tests foram ajustados.
 
 Adicionando nova moeda (Franco).
 - basicamente a regra do Dolar foi replicada.
+
+6 - Igualdade para Todos, Restaurada
+
+- Os métodos "equals()" de Franc e Dollar foram movidos para uma class Pai chamada **Money**
+- A variável **amount** também foi movida para a class pai. _(Sem essa alteração aconteceria um erro no equals do pai)_
