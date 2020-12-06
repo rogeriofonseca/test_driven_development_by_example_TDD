@@ -11,3 +11,8 @@ Implementando método equals()
 4 - Privacidade
 
 A variável amount foi convertida para **private** e os tests foram ajustados.
+
+5 - Falando Franca-mente*
+
+Adicionando nova moeda (Franco).
+- basicamente a regra do Dolar foi replicada.
