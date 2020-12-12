@@ -2,7 +2,14 @@ package br.com.rogerio;
 
 abstract class Money {
 
+	protected String currency;
 
+	protected int amount;
+	
+	Money(int amount, String currency){
+		this.amount = amount;
+		this.currency = currency;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -25,11 +32,10 @@ abstract class Money {
 		return true;
 	}
 
-	protected int amount;
 	
 	abstract Money times(int multipler);
 	
-	protected abstract String currency();
+	abstract String currency();
 	
 	public static Money dollar(int amount) {
 		return new Dollar(amount, "USD");

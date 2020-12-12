@@ -2,11 +2,8 @@ package br.com.rogerio;
 
 public class Dollar extends Money{
 
-	private String currency;
-
 	public Dollar(int amount, String currency) {
-		this.amount = amount;
-		this.currency = currency;
+		super(amount, currency);
 	}
 
 	public Money times(int multiplier) {

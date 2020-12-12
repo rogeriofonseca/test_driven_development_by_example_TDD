@@ -34,3 +34,8 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 
 - Acrescentamos uma variável para retornar uma String representando a sigla da moeda;
 - Adicionamos no constructor a definição da sigla da moeda;
+
+9.1 - Tempos em que Estamos Vivendo*
+
+- A variável **"currency"** na **class** Money foi alterada de **private** para **protected** e foi retirada das classes Dollar e Money
+- Subimos os construdores de ambos objetos para o constructor do **super**
