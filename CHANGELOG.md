@@ -21,3 +21,7 @@ Adicionando nova moeda (Franco).
 
 - Os métodos "equals()" de Franc e Dollar foram movidos para uma class Pai chamada **Money**
 - A variável **amount** também foi movida para a class pai. _(Sem essa alteração aconteceria um erro no equals do pai)_
+
+7 - Maçãs e Laranjas
+
+Como implementamos o equals() padrão do Java a comparação do **"getClass()"** já estava sendo feita e **5 Dollars** já é considerado diferente de **5 Francs.**
