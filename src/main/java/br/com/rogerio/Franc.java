@@ -2,11 +2,19 @@ package br.com.rogerio;
 
 public class Franc extends Money {
 
-	public Franc(int amount) {
+	private String currency;
+
+	public Franc(int amount, String currency) {
 		this.amount = amount;
+		this.currency = currency;
 	}
 
-	public Franc times(int multiplier) {
-		return new Franc(amount * multiplier);
+	public Money times(int multiplier) {
+		return Money.franc(amount * multiplier);
+	}
+	
+	@Override
+	protected String currency() {
+		return currency;
 	}
 }

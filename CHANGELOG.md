@@ -25,3 +25,12 @@ Adicionando nova moeda (Franco).
 7 - Maçãs e Laranjas
 
 Como implementamos o equals() padrão do Java a comparação do **"getClass()"** já estava sendo feita e **5 Dollars** já é considerado diferente de **5 Francs.**
+
+8 - Fazendo Objetos
+
+- Criamos métodos static na class Money para criação de objetos Dollar e Franc
+
+9 - Tempos em que Estamos Vivendo*
+
+- Acrescentamos uma variável para retornar uma String representando a sigla da moeda;
+- Adicionamos no constructor a definição da sigla da moeda;
