@@ -49,3 +49,8 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 11 A Raiz de todo Mal
 
 - Eliminamos as subclasses Dolar e Franc
+
+12 Adição, Finalmente
+
+- Criando classes Bank, Expression;
+- Criando método reduce;
