@@ -1,6 +1,6 @@
 package br.com.rogerio;
 
-abstract class Money {
+public class Money {
 
 	protected String currency;
 
@@ -20,23 +20,23 @@ abstract class Money {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Money other = (Money) obj;
-		if (amount != other.amount)
-			return false;
-		return true;
+		Money money = (Money) obj;
+		return amount == money.amount 
+				&& currency().equals(money.currency());
 	}
-
 	
-	abstract Money times(int multipler);
+	Money times(int multipler) {
+		return null;
+	}
 	
-	abstract String currency();
+	protected String currency() {
+		return currency;
+	}
 	
+	@Override
+	public String toString() {
+		return amount + " " + currency;
+	}
 	public static Money dollar(int amount) {
 		return new Dollar(amount, "USD");
 	}

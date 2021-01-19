@@ -39,3 +39,9 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 
 - A variável **"currency"** na **class** Money foi alterada de **private** para **protected** e foi retirada das classes Dollar e Money
 - Subimos os construdores de ambos objetos para o constructor do **super**
+
+10 Tempos interessantes
+
+- Conciliando implementação do método **times();**
+- Escrevendo toString() na super **class Money;**
+- Ajustes em método equals();

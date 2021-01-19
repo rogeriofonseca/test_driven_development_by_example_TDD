@@ -17,11 +17,11 @@ public class MoneyTest {
 	@Test
 	public void testEquality() {
 		assertTrue(Money.dollar(5).equals(Money.dollar(5)));
-		assertFalse(Money.dollar(5).equals(Money.dollar(612)));
-		assertTrue(Money.dollar(5).equals(Money.dollar(5)));
 		assertFalse(Money.dollar(5).equals(Money.dollar(6)));
+		assertTrue(Money.dollar(5).equals(Money.dollar(5)));
 		assertFalse(Money.dollar(5).equals(Money.franc(5)));
 	}
+	
 	
 	@Test
 	public void testFrancMultiplication() {
