@@ -45,3 +45,7 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 - Conciliando implementação do método **times();**
 - Escrevendo toString() na super **class Money;**
 - Ajustes em método equals();
+
+11 A Raiz de todo Mal
+
+- Eliminamos as subclasses Dolar e Franc

@@ -25,8 +25,12 @@ public class Money {
 				&& currency().equals(money.currency());
 	}
 	
-	Money times(int multipler) {
-		return null;
+//	Money times(int multipler) {
+//		return null;
+//	}
+	
+	public Money times(int multiplier) {
+		return new Money(amount * multiplier, currency);
 	}
 	
 	protected String currency() {
@@ -38,10 +42,10 @@ public class Money {
 		return amount + " " + currency;
 	}
 	public static Money dollar(int amount) {
-		return new Dollar(amount, "USD");
+		return new Money(amount, "USD");
 	}
 
 	public static Money franc(int amount) {
-		return new Franc(amount, "CHF");
+		return new Money(amount, "CHF");
 	}
 }
