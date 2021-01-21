@@ -44,7 +44,12 @@ public class Money implements Expression {
 	public static Money franc(int amount) {
 		return new Money(amount, "CHF");
 	}
-	public Money plus(Money addend) {
-		return new Money(amount + addend.amount, currency);
+
+	public Expression plus(Money addend) {
+		return new Sum(this, addend);
+	}
+
+	public Money reduce(String to) {
+		return this;
 	}
 }

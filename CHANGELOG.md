@@ -54,3 +54,9 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 
 - Criando classes Bank, Expression;
 - Criando método reduce;
+
+13 Faça-o
+
+- Eliminando duplicação de código e implementando reduce Bank;
+- Acrescentando reduce em interface Expression e implementando na class Money;
+- Forçamos a criação de uma class Sum que recebe sua responsabilidade;
