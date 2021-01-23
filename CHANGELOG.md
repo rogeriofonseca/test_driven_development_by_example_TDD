@@ -67,3 +67,10 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 - Acrescentamos uma class auxiliar Pair para auxiliar lógica de taxas em um objeto Map
 - Lógica para adicionar taxa de câmbio
 - Lógica para converter Francos em Dollar
+
+15 Moedas Misturadas
+
+- Eliminamos um método (reduce) redundante na Interface Expression;
+- Adicionamos a lógica de *reduce* da class Money no método reduce da class Sum
+	Sum reduce() call -> Money.reduce();
+- Alteramos a tipagem de alguns Objects de Money para Expression generalizando um pouco mais a solução;
