@@ -74,3 +74,7 @@ Como implementamos o equals() padrão do Java a comparação do **"getClass()"**
 - Adicionamos a lógica de *reduce* da class Money no método reduce da class Sum
 	Sum reduce() call -> Money.reduce();
 - Alteramos a tipagem de alguns Objects de Money para Expression generalizando um pouco mais a solução;
+
+16 Abstração, Finalmente
+
+- Implementação do método plus() e times() na *class Sum*
